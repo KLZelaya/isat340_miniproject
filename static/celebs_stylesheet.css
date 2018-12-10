@@ -1,0 +1,35 @@
+body{
+background: lightcyan;
+
+}
+
+
+table{
+background: white;
+border: 5px solid black;
+border-collapse: collapse;
+width: 50%;
+
+}
+
+td, th{
+border: 1px solid black;
+text-align: center;
+padding: 10px
+}
+
+th{
+background: #E3E3E0;
+font-weight: bold;
+
+
+}
+
+table.center {
+margin-left: auto;
+margin-right: auto;
+}
+
+tr.lightcyan {
+background: lightcyan;
+}

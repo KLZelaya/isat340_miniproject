@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flask App - One Celebrity</title>
+    <link type="text/css" rel="stylesheet" href="static/celebs_stylesheet.css"/>
+</head>
+
+<body>
+
+<table class="center">
+
+    <tr>
+        <th>Photo</th>
+        <td><img src="{{photo}}" height="256" width="256"/></td>
+    </tr>
+
+    <tr>
+        <th>Celebrity ID</th>
+        <td><input type="text" name="celebsID" value="{{celebsID}}" readonly/></td>
+    </tr>
+
+    <tr>
+        <th>First Name</th>
+        <td><input type="text" name="firstname" value="{{firstname}}"/></td>
+    </tr>
+
+    <tr>
+        <th>Last Name</th>
+        <td><input type="text" name="lastname" value="{{lastname}}"/></td>
+    </tr>
+
+    <tr>
+        <th>Age</th>
+        <td><input type="text" name="age" value="{{age}}"/></td>
+    </tr>
+
+    <tr>
+        <th>Email</th>
+        <td><input type="text" name="email" value="{{email}}"/></td>
+    </tr>
+
+    <tr>
+        <th>Bio</th>
+        <td><input type="text" name="bio" value="{{bio}}"/></td>
+    </tr>
+
+    <tr class="lightcyan"><td colspan=2><br></td></tr>
+
+
+</table>
+
+
+</body>
+</html>

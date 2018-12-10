@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Final Project</title>
+	<style type="text/css">body { background-color: lightcyan;}</style>
+
+</head>
+
+<body>
+<fieldset>
+	<legend>Profile Information</legend>
+	<form action="" method="post">
+		<table border="1">
+
+			<p>Please <strong>update</strong> your profile information on the following form <br>
+				<em>All fields are required and must contain valid information</em>
+			</p>
+        
+		<tr>
+			<td>Member ID:</td>
+			<td><input type="text" name="memberID" value="{{memberID}}" readonly></td>
+		</tr>
+
+		<tr>
+			<td>First name:</td>
+			<td><input type="text" name="firstname" value="{{firstname}}"></td>
+		</tr>
+		
+		<tr>
+			<td>Last name:</td>
+			<td><input type="text" name="lastname" value="{{lastname}}"></td>
+		</tr>
+		
+		<tr>
+			<td>Age</td>
+			<td><input type="text" name="age" value="{{age}}"></td>
+		</tr>
+		
+		<tr>
+			<td>Email</td>
+			<td><input type="text" name="email" value="{{email}}"><em> e.g. user@domain.com</em></td>
+		</tr>
+
+		<tr>
+			<td><img src="{{url_for('static',filename='kelly.jpg')}}" width="110" height="130"></td>
+			<td><textarea name="bio" rows="6" cols="50">{{bio}}</textarea>
+		</tr>
+		
+		<tr>
+			<td colspan="2"><input type="submit" value="Submit">
+		</tr>
+	
+	</table>
+	
+  </fieldset>
+
+{% if success %}
+<h3 style="color:magenta;">Data successfully submitted to the database!</h3>
+{% endif %}
+
+</form>
+
+<link><a href="/view_all_celebs"> Click to view all the celebrities </a><br>
+<link><a href="/view_one_celeb"> Click to view one of the celebrities </a>
+
+
+</body>
+</html>
