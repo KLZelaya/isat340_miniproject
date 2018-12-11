@@ -1,4 +1,4 @@
-__author__ = 'Tony Teate'
+__author__ = 'Spencer Garrett and Kelly Lopez Zelaya'
 
 # imports
 import sqlite3
